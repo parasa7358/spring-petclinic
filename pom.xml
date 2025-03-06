@@ -73,7 +73,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <!-- Workaround for AOT issue (httpss://github.com/spring-projects/spring-framework/pull/33949) -->
+      <!-- Workaround for AOT issue (http://github.com/spring-projects/spring-framework/pull/33949) -->
       <groupId>io.projectreactor</groupId>
       <artifactId>reactor-core</artifactId>
     </dependency>
@@ -302,7 +302,7 @@
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>
-      <url>httpss://www.apache.org/licenses/LICENSE-2.0</url>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
     </license>
   </licenses>
 
@@ -313,7 +313,7 @@
       </snapshots>
       <id>spring-snapshots</id>
       <name>Spring Snapshots</name>
-      <url>httpss://repo.spring.io/snapshot</url>
+      <url>http://repo.spring.io/snapshot</url>
     </repository>
     <repository>
       <snapshots>
@@ -321,7 +321,7 @@
       </snapshots>
       <id>spring-milestones</id>
       <name>Spring Milestones</name>
-      <url>httpss://repo.spring.io/milestone</url>
+      <url>http://repo.spring.io/milestone</url>
     </repository>
   </repositories>
   <pluginRepositories>
@@ -331,7 +331,7 @@
       </snapshots>
       <id>spring-snapshots</id>
       <name>Spring Snapshots</name>
-      <url>httpss://repo.spring.io/snapshot</url>
+      <url>http://repo.spring.io/snapshot</url>
     </pluginRepository>
     <pluginRepository>
       <snapshots>
@@ -339,7 +339,7 @@
       </snapshots>
       <id>spring-milestones</id>
       <name>Spring Milestones</name>
-      <url>httpss://repo.spring.io/milestone</url>
+      <url>http://repo.spring.io/milestone</url>
     </pluginRepository>
   </pluginRepositories>
 

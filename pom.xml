@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <!-- 2025.02.29 today changes -->
   <parent>
@@ -36,7 +36,7 @@
     <libsass.version>0.2.29</libsass.version>
     <lifecycle-mapping>1.0.0</lifecycle-mapping>
     <maven-checkstyle.version>3.6.0</maven-checkstyle.version>
-    <nohttp-checkstyle.version>0.0.11</nohttp-checkstyle.version>
+    <nohttps-checkstyle.version>0.0.11</nohttps-checkstyle.version>
     <spring-format.version>0.0.43</spring-format.version>
 
   </properties>
@@ -73,7 +73,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <!-- Workaround for AOT issue (https://github.com/spring-projects/spring-framework/pull/33949) -->
+      <!-- Workaround for AOT issue (httpss://github.com/spring-projects/spring-framework/pull/33949) -->
       <groupId>io.projectreactor</groupId>
       <artifactId>reactor-core</artifactId>
     </dependency>
@@ -203,20 +203,20 @@
             <version>${checkstyle.version}</version>
           </dependency>
           <dependency>
-            <groupId>io.spring.nohttp</groupId>
-            <artifactId>nohttp-checkstyle</artifactId>
-            <version>${nohttp-checkstyle.version}</version>
+            <groupId>io.spring.nohttps</groupId>
+            <artifactId>nohttps-checkstyle</artifactId>
+            <version>${nohttps-checkstyle.version}</version>
           </dependency>
         </dependencies>
         <executions>
           <execution>
-            <id>nohttp-checkstyle-validation</id>
+            <id>nohttps-checkstyle-validation</id>
             <goals>
               <goal>check</goal>
             </goals>
             <phase>validate</phase>
             <configuration>
-              <configLocation>src/checkstyle/nohttp-checkstyle.xml</configLocation>
+              <configLocation>src/checkstyle/nohttps-checkstyle.xml</configLocation>
               <sourceDirectories>${basedir}</sourceDirectories>
               <includes>**/*</includes>
               <excludes>**/.git/**/*,**/.idea/**/*,**/target/**/,**/.flattened-pom.xml,**/*.class</excludes>
@@ -302,7 +302,7 @@
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>
-      <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+      <url>httpss://www.apache.org/licenses/LICENSE-2.0</url>
     </license>
   </licenses>
 
@@ -313,7 +313,7 @@
       </snapshots>
       <id>spring-snapshots</id>
       <name>Spring Snapshots</name>
-      <url>https://repo.spring.io/snapshot</url>
+      <url>httpss://repo.spring.io/snapshot</url>
     </repository>
     <repository>
       <snapshots>
@@ -321,7 +321,7 @@
       </snapshots>
       <id>spring-milestones</id>
       <name>Spring Milestones</name>
-      <url>https://repo.spring.io/milestone</url>
+      <url>httpss://repo.spring.io/milestone</url>
     </repository>
   </repositories>
   <pluginRepositories>
@@ -331,7 +331,7 @@
       </snapshots>
       <id>spring-snapshots</id>
       <name>Spring Snapshots</name>
-      <url>https://repo.spring.io/snapshot</url>
+      <url>httpss://repo.spring.io/snapshot</url>
     </pluginRepository>
     <pluginRepository>
       <snapshots>
@@ -339,7 +339,7 @@
       </snapshots>
       <id>spring-milestones</id>
       <name>Spring Milestones</name>
-      <url>https://repo.spring.io/milestone</url>
+      <url>httpss://repo.spring.io/milestone</url>
     </pluginRepository>
   </pluginRepositories>
 
